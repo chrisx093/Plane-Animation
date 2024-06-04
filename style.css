@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-repeat: none;
+    background-image: url(/images/background\ 2.jpg);
+    background-size: cover;
+}
+
+.clouds{
+    display: flex;
+    gap: 20px;
+    animation: cloud;
+    animation-duration: 5s;
+    animation: cloud 11s linear infinite;
+    
+}
+@keyframes cloud {
+    100% {
+        transform: translate(-200px);
+    }
+    
+    
+}
+.plane{
+    position: absolute;
+    top: 400px;
+    animation: plane1 25s linear infinite;
+}
+@keyframes plane1 {
+    0%{
+        transform: translate(0%);
+    }
+    100%{
+        transform: translate(1000px, -500px);
+    }
+    
+}
+.sound{
+   position: absolute;
+   top: 550px;
+   left: 0px;
+   position: fixed;
+}
